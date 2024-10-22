@@ -6,8 +6,8 @@ def hello_world():
 hello_world()
 
 def get_min(my_list):
-    x=my_list[0]
+    min_value = my_list[0]
     for element in my_list:
-        if x <= element:
-            x = element
-    return x
+        if min_value >= element:
+            min_value = element
+    return min_value
