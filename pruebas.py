@@ -5,4 +5,5 @@ def test_hello_world():
     assert mn.hello_world() is True
 
 def test_get_min():
-    assert mn.get_min([1,2,3]) is 1
+    resultado =mn.get_min([1,2,3])
+    assert resultado is 1
