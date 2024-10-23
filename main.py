@@ -1,5 +1,9 @@
 from os import write
 
+def gorditas():
+    print("HOLA VENDO GORDITAS:) Y TAMALES:)")
+    return True
+
 def hello_world():
     print("Hello World")
     return True
@@ -20,3 +24,4 @@ def get_max(my_list):
 
 
 hello_world()
+gorditas()

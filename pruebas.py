@@ -1,9 +1,12 @@
 import pytest
 import main as mn
-#import numpy.ma.testutils import assert_almost_equal
+import numpy.ma.testutils import assert_almost_equal
 
 def test_hello_world():
     assert mn.hello_world() is True
+
+def test_gorditas():
+    assert mn.gorditas() is True
 
 def test_get_min():
     resultado1 =mn.get_min([1,2,3])
