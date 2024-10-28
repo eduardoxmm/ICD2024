@@ -53,4 +53,20 @@ def goldbach(n):
             return f"{i} + {n - i}"
     return False
 
+
+def maxarea(h):
+    l = 0
+    r = len(h) - 1
+    m_w = 0
+    while l < r:
+        w = r - l
+        h_c = min(h[l], h[r])
+        a_c = w * h_c
+        m_w = max(m_w, a_c)
+        if h[l] < h[r]:
+            l += 1
+        else:
+            r -= 1
+    return m_w
+
 hello_world()

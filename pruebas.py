@@ -33,3 +33,6 @@ def test_goldbach():
     gold =mn.goldbach(28)
     assert gold == "5 + 23"
 
+def test_tanque():
+    area = mn.maxarea([10, 8, 6, 5, 4, 3, 2, 1])
+    assert area == 16
