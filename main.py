@@ -38,6 +38,7 @@ def comun_lists(list1, list2):
     common_elements.sort()
     return common_elements
 
+
 def goldbach(n):
     def prime(num):
         if num < 2:
@@ -46,13 +47,19 @@ def goldbach(n):
             if num % i == 0:
                 return False
         return True
+
     if n <= 2 or n % 2 != 0:
-        return False
+        return "El numero debe ser un numero par mayor que 2."
+
+    combinations = []
     for i in range(2, n):
         if prime(i) and prime(n - i):
-            return f"{i} + {n - i}"
-    return False
+            combinations.append(f"{i} + {n - i}")
 
+    if combinations:
+        return combinations
+    else:
+        return "No se encontraron combinaciones."
 
 def maxarea(h):
     l = 0

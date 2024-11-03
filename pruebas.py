@@ -31,7 +31,7 @@ def test_comun_list():
 
 def test_goldbach():
     gold =mn.goldbach(28)
-    assert gold == "5 + 23"
+    assert gold == ['5 + 23', '11 + 17', '17 + 11', '23 + 5']
 
 def test_tanque():
     area = mn.maxarea([10, 8, 6, 5, 4, 3, 2, 1])
