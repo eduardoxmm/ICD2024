@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-workbook1 = 'diabetesnorm.xlsx'
+workbook1 = 'diabetes2.xlsx'
 df = pd.read_excel(workbook1)
 
 sns.set(style="whitegrid")
@@ -18,9 +18,9 @@ for column in df.select_dtypes(include=np.number).columns:
 
     plt.grid(visible=True, linestyle='--', linewidth=0.5, alpha=0.7)
 
-    plt.savefig(f'{column}_histogramaNorm.png', format='png', bbox_inches='tight')
-    plt.savefig(f'{column}_histogramaNorm.svg', format='svg', bbox_inches='tight')
-    plt.savefig(f'{column}_histogramaNorm.eps', format='eps', bbox_inches='tight')
+    plt.savefig(f'{column}_histograma.png', format='png', bbox_inches='tight')
+    plt.savefig(f'{column}_histograma.svg', format='svg', bbox_inches='tight')
+    plt.savefig(f'{column}_histograma.eps', format='eps', bbox_inches='tight')
 
     plt.show()
 
